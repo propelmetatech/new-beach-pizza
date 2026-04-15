@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top left, rgba(0, 119, 182, 0.1), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(249, 200, 70, 0.16), transparent 28%),
+    linear-gradient(180deg, #fffdf7 0%, #fff9ee 48%, #fff4dd 100%);
+}
+
+@layer base {
+  body {
+    @apply font-body text-brand-black;
+  }
+
+  * {
+    @apply border-black/5;
+  }
+
+  ::selection {
+    background: rgba(0, 119, 182, 0.18);
+  }
+}
+
+@layer components {
+  .page-shell {
+    @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-8;
+  }
+
+  .surface-card {
+    @apply rounded-[30px] border border-brand-primary/10 bg-white shadow-soft backdrop-blur-sm;
+  }
+
+  .pill-link {
+    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black transition hover:-translate-y-0.5 hover:border-brand-primary hover:bg-brand-primary/10 hover:text-brand-primary;
+  }
+
+  .menu-chip {
+    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black shadow-sm transition hover:-translate-y-0.5 hover:border-brand-primary hover:bg-brand-primary/10 hover:text-brand-primary;
+  }
+
+  .hero-shell {
+    background:
+      radial-gradient(circle at top right, rgba(249, 200, 70, 0.24), transparent 24%),
+      radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.16), transparent 18%),
+      linear-gradient(145deg, #1e2428 0%, #00699f 36%, #c6282d 72%, #f9c846 100%);
+  }
+
+  .hero-dots {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.32) 1px, transparent 1px);
+    background-size: 18px 18px;
+  }
+
+  .glass-panel {
+    @apply border border-white/15 bg-white/10 shadow-float backdrop-blur-md;
+  }
+
+  .category-rail-shell {
+    background:
+      linear-gradient(180deg, rgba(255, 249, 238, 0.96) 0%, rgba(255, 255, 255, 0.97) 100%);
+  }
+
+  .category-rail {
+    scrollbar-width: thin;
+    scrollbar-color: #0077b6 rgba(30, 36, 40, 0.14);
+  }
+
+  .category-rail::-webkit-scrollbar {
+    height: 12px;
+  }
+
+  .category-rail::-webkit-scrollbar-track {
+    border-radius: 9999px;
+    background: rgba(17, 17, 17, 0.14);
+  }
+
+  .category-rail::-webkit-scrollbar-thumb {
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    border-radius: 9999px;
+    background: linear-gradient(90deg, #0077b6 0%, #0097d8 100%);
+  }
+
+  .category-rail::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90deg, #c6282d 0%, #f9c846 100%);
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

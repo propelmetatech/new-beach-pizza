@@ -1,0 +1,18 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#241514"/>
+  <circle cx="610" cy="455" r="325" fill="#EEC86F"/>
+  <circle cx="610" cy="455" r="290" fill="#F6DB8E"/>
+  <circle cx="610" cy="455" r="255" fill="#C65C2F"/>
+  <circle cx="610" cy="455" r="225" fill="#F9B64F"/>
+  <circle cx="492" cy="344" r="38" fill="#8B2E1C"/>
+  <circle cx="692" cy="313" r="34" fill="#912F1D"/>
+  <circle cx="778" cy="487" r="36" fill="#8B2E1C"/>
+  <circle cx="428" cy="555" r="34" fill="#912F1D"/>
+  <circle cx="604" cy="608" r="36" fill="#8B2E1C"/>
+  <circle cx="523" cy="485" r="26" fill="#4C8E45"/>
+  <circle cx="696" cy="552" r="26" fill="#4C8E45"/>
+  <circle cx="747" cy="390" r="22" fill="#4C8E45"/>
+  <circle cx="556" cy="298" r="22" fill="#4C8E45"/>
+  <path d="M164 154C235 107 329 79 418 83" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="18" stroke-linecap="round"/>
+  <path d="M886 714C962 677 1028 620 1072 548" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="18" stroke-linecap="round"/>
+</svg>

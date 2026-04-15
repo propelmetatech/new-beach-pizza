@@ -1,0 +1,12 @@
+[
+  {
+    "id": "main-board",
+    "title": "Main Board",
+    "description": "Visible from parking / street."
+  },
+  {
+    "id": "counter-board",
+    "title": "Counter Board",
+    "description": "Fast reads, fast orders."
+  }
+]

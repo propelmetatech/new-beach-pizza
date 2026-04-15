@@ -1,0 +1,13 @@
+{
+  "brand": "SEMINOLE favourites",
+  "boards": [
+    {
+      "id": "main-board",
+      "source": "./main-board.json"
+    },
+    {
+      "id": "counter-board",
+      "source": "./counter-board.json"
+    }
+  ]
+}

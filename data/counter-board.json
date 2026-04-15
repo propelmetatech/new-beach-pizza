@@ -1,0 +1,262 @@
+[
+  {
+    "id": "quick-bites",
+    "boardId": "counter-board",
+    "title": "Quick Bites & Crowd Pleasers",
+    "description": "Counter Board - fast reads, fast orders",
+    "heroCopy": "This counter section should feel immediate and snackable, with a strong combo callout and simple card hierarchy.",
+    "coverImage": "/images/pizza-pepperoni.svg",
+    "pricingNote": "The Slice Counter - Perfect after the beach or ball practice",
+    "items": [
+      {
+        "id": "classic-cheese-slice",
+        "name": "Classic Cheese",
+        "description": "",
+        "price": 5,
+        "image": "/images/pizza-pepperoni.svg",
+        "tag": "Slice Counter"
+      },
+      {
+        "id": "pepperoni-slice",
+        "name": "Pepperoni",
+        "description": "",
+        "price": 6,
+        "image": "/images/pizza-pepperoni.svg",
+        "tag": "Top Seller"
+      },
+      {
+        "id": "mushroom-and-olive-slice",
+        "name": "Mushroom & Olive",
+        "description": "",
+        "price": 5,
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Vegetarian"
+      },
+      {
+        "id": "corn-and-cheese-slice",
+        "name": "Corn & Cheese",
+        "description": "",
+        "price": 5,
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Kid Friendly"
+      },
+      {
+        "id": "slice-and-drink-combo",
+        "name": "Slice + Small Fountain Drink Combo",
+        "description": "",
+        "price": 6.99,
+        "image": "/images/drink-cola.svg",
+        "tag": "Combo",
+        "featured": true
+      }
+    ]
+  },
+  {
+    "id": "beach-snacks",
+    "boardId": "counter-board",
+    "title": "Beach Snacks",
+    "description": "Share them or don’t. We won’t judge.",
+    "heroCopy": "Snack plates and shareables keep the counter board flexible for families, groups, and impulse add-ons.",
+    "coverImage": "/images/category-sides.svg",
+    "items": [
+      {
+        "id": "garlic-bread-planks",
+        "name": "Garlic Bread Planks",
+        "description": "Plain, Cheesy, Chilli Cheesy.",
+        "price": 5.99,
+        "image": "/images/side-breadsticks.svg",
+        "tag": "Shareable"
+      },
+      {
+        "id": "truffle-cheesy-wave-fries",
+        "name": "Truffle Cheesy Wave Fries",
+        "description": "Nacho cheese, jalapenos.",
+        "price": 6.95,
+        "image": "/images/category-sides.svg",
+        "tag": "Loaded"
+      },
+      {
+        "id": "seminole-spiced-wedges",
+        "name": "Seminole Spiced Wedges",
+        "description": "Peri-peri seasoning, garlic dip.",
+        "price": 5.95,
+        "image": "/images/category-sides.svg",
+        "tag": "House Seasoning"
+      },
+      {
+        "id": "cheese-lava-bites",
+        "name": "Cheese Lava Bites",
+        "description": "Golden outside, melty middle.",
+        "price": 6.95,
+        "image": "/images/side-breadsticks.svg",
+        "tag": "Crowd Pleaser"
+      }
+    ]
+  },
+  {
+    "id": "one-hand-eats",
+    "boardId": "counter-board",
+    "title": "One-Hand Eats",
+    "description": "Because kids + beach = chaos",
+    "heroCopy": "Portable wraps give the counter board a grab-and-go section that still feels branded and menu-worthy.",
+    "coverImage": "/images/wrap-board.svg",
+    "items": [
+      {
+        "id": "bbq-chicken-pizza-wrap",
+        "name": "BBQ Chicken Pizza Wrap",
+        "description": "",
+        "price": 7.95,
+        "image": "/images/wrap-board.svg",
+        "tag": "Portable"
+      },
+      {
+        "id": "veg-loaded-wrap",
+        "name": "Veg Loaded Wrap",
+        "description": "",
+        "price": 6.95,
+        "image": "/images/wrap-board.svg",
+        "tag": "Vegetarian"
+      },
+      {
+        "id": "pepperoni-and-cheese-wrap",
+        "name": "Pepperoni & Cheese Wrap",
+        "description": "",
+        "price": 7.95,
+        "image": "/images/wrap-board.svg",
+        "tag": "Quick Pick"
+      }
+    ]
+  },
+  {
+    "id": "burgers",
+    "boardId": "counter-board",
+    "title": "Oven Baked Burgers",
+    "description": "",
+    "heroCopy": "The burger section broadens the counter board and creates another familiar fast-order lane next to wraps and subs.",
+    "coverImage": "/images/burger-stack.svg",
+    "items": [
+      {
+        "id": "the-seminole-classic-burger",
+        "name": "The Seminole Classic",
+        "description": "Beef patty, American cheese, lettuce, tomato, house sauce.",
+        "price": 7.95,
+        "image": "/images/burger-stack.svg",
+        "tag": "Classic"
+      },
+      {
+        "id": "bbq-boardwalk-burger",
+        "name": "BBQ Boardwalk Burger",
+        "description": "Chicken patty, BBQ glaze, bacon, cheddar, crispy onions.",
+        "price": 7.95,
+        "image": "/images/burger-stack.svg",
+        "tag": "Smoky",
+        "featured": true
+      },
+      {
+        "id": "hawaiian-sunset-burger",
+        "name": "Hawaiian Sunset Burger",
+        "description": "Beef patty, grilled pineapple, ham, Swiss cheese.",
+        "price": 7.95,
+        "image": "/images/burger-stack.svg",
+        "tag": "Sweet & Savory"
+      }
+    ]
+  },
+  {
+    "id": "stromboli",
+    "boardId": "counter-board",
+    "title": "Stromboli",
+    "description": "",
+    "heroCopy": "A single-item section still earns a full card because it reads like a signature upsell near the counter line.",
+    "coverImage": "/images/pizza-bbq.svg",
+    "items": [
+      {
+        "id": "house-stromboli",
+        "name": "Stromboli",
+        "description": "Filled with onion, mushroom, green peppers, tomato sauce and mozzarella cheese.",
+        "price": 10,
+        "image": "/images/pizza-bbq.svg",
+        "tag": "Oven Baked",
+        "note": "Add pepperoni and sausages - Ask in store."
+      }
+    ]
+  },
+  {
+    "id": "sweet-endings",
+    "boardId": "counter-board",
+    "title": "Sweet Endings",
+    "description": "Dessert tastes better near the beach",
+    "heroCopy": "These dessert items are perfect for merchandising even when exact prices are still being finalized.",
+    "coverImage": "/images/category-desserts.svg",
+    "items": [
+      {
+        "id": "chocolate-lava-slice",
+        "name": "Chocolate Lava Slice",
+        "description": "",
+        "priceLabel": "Ask in store",
+        "image": "/images/dessert-brownie.svg",
+        "tag": "Warm"
+      },
+      {
+        "id": "nutella-dessert-pizza",
+        "name": "Nutella Dessert Pizza",
+        "description": "",
+        "priceLabel": "Ask in store",
+        "image": "/images/dessert-cookie.svg",
+        "tag": "Dessert Pizza"
+      },
+      {
+        "id": "brownie-and-ice-cream",
+        "name": "Brownie & Ice Cream",
+        "description": "",
+        "priceLabel": "Ask in store",
+        "image": "/images/dessert-brownie.svg",
+        "tag": "Classic"
+      }
+    ]
+  },
+  {
+    "id": "subs",
+    "boardId": "counter-board",
+    "title": "Subs",
+    "description": "",
+    "heroCopy": "Subs add another strong quick-order lane and work well with the same card system as pizzas and wings once size options are modeled.",
+    "coverImage": "/images/sandwich-sub.svg",
+    "pricingNote": "Half and whole sizes available",
+    "items": [
+      {
+        "id": "fillet-beef-steak-subway",
+        "name": "Fillet Beef Steak Subway",
+        "description": "Grilled beef steak, caramelized onion, cheese, lettuce, pickle veggie.",
+        "variants": [
+          { "id": "half", "label": "Half", "price": 6.5 },
+          { "id": "whole", "label": "Whole", "price": 12 }
+        ],
+        "image": "/images/sandwich-sub.svg",
+        "tag": "Steak"
+      },
+      {
+        "id": "grilled-chicken-subway",
+        "name": "Grilled Chicken Subway",
+        "description": "Roasted chicken strip, cheese, salami, lettuce, pickle veggie.",
+        "variants": [
+          { "id": "half", "label": "Half", "price": 6.5 },
+          { "id": "whole", "label": "Whole", "price": 12 }
+        ],
+        "image": "/images/sandwich-sub.svg",
+        "tag": "Chicken"
+      },
+      {
+        "id": "truffle-mushroom-subway",
+        "name": "Truffle Mushroom Subway",
+        "description": "Two mushroom, double cheese, pickles, signature sauce.",
+        "variants": [
+          { "id": "half", "label": "Half", "price": 5 },
+          { "id": "whole", "label": "Whole", "price": 11 }
+        ],
+        "image": "/images/sandwich-sub.svg",
+        "tag": "Vegetarian"
+      }
+    ]
+  }
+]

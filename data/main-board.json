@@ -1,0 +1,290 @@
+[
+  {
+    "id": "salads",
+    "boardId": "main-board",
+    "title": "Salads",
+    "description": "Fresh & Light",
+    "heroCopy": "Bright greens, coastal toppings, and quick add-on proteins give the main board a fresh opening section.",
+    "coverImage": "/images/salad-bowl.svg",
+    "items": [
+      {
+        "id": "sunshine-caesar",
+        "name": "Sunshine Caesar",
+        "description": "Crisp romaine, parmesan, garlic croutons.",
+        "price": 8.95,
+        "image": "/images/salad-bowl.svg",
+        "tag": "Fresh Favorite",
+        "note": "Add chicken or shrimp - Ask in store.",
+        "featured": true
+      },
+      {
+        "id": "gulf-coast-greek",
+        "name": "Gulf Coast Greek",
+        "description": "Cucumber, tomato, olives, feta, lemon vinaigrette.",
+        "price": 6.95,
+        "image": "/images/salad-bowl.svg",
+        "tag": "Light"
+      },
+      {
+        "id": "buffalo-chicken-crunch",
+        "name": "Buffalo Chicken Crunch",
+        "description": "Romaine, carrot, celery, crispy chicken, ranch drizzle.",
+        "price": 8.95,
+        "image": "/images/salad-bowl.svg",
+        "tag": "Bold"
+      },
+      {
+        "id": "west-coast-vegan-bowl",
+        "name": "West Coast Vegan Bowl",
+        "description": "Mixed greens, roasted veggies, avocado, lemon tahini.",
+        "price": 7.95,
+        "image": "/images/salad-bowl.svg",
+        "tag": "Vegan"
+      }
+    ]
+  },
+  {
+    "id": "shrimp-specialties",
+    "boardId": "main-board",
+    "title": "Shrimp Specialties",
+    "description": "Oven & Pan-Finished",
+    "heroCopy": "This section plays like a strong specialty lane: simple price architecture, bold flavor naming, and craveable shrimp-first ordering.",
+    "coverImage": "/images/shrimp-plate.svg",
+    "pricingNote": "$10.95 each",
+    "items": [
+      {
+        "id": "garlic-butter-shrimp",
+        "name": "Garlic Butter Shrimp",
+        "description": "Sauteed shrimp, garlic butter, lemon, herbs.",
+        "price": 10.95,
+        "image": "/images/shrimp-plate.svg",
+        "tag": "Signature",
+        "featured": true
+      },
+      {
+        "id": "shrimp-taco-style",
+        "name": "Shrimp Taco Style",
+        "description": "Spiced shrimp, cabbage slaw, citrus cream.",
+        "price": 10.95,
+        "image": "/images/shrimp-plate.svg",
+        "tag": "Beach Pick"
+      },
+      {
+        "id": "bang-bang-shrimp",
+        "name": "Bang-Bang Shrimp",
+        "description": "Crispy shrimp, sweet-spicy beach sauce.",
+        "price": 10.95,
+        "image": "/images/shrimp-plate.svg",
+        "tag": "Crispy"
+      }
+    ]
+  },
+  {
+    "id": "beach-oven-classics",
+    "boardId": "main-board",
+    "title": "Beach Oven Classics",
+    "description": "12\", 14\", 16\" Hand-Stretched and Family Friendly",
+    "heroCopy": "This is the core pizza wall: clear size ladders, family-friendly pricing, and signature coastal flavor names that deserve the biggest visual treatment on the site.",
+    "coverImage": "/images/category-pizza.svg",
+    "pricingNote": "Small, Medium, Large hand-stretched pies",
+    "items": [
+      {
+        "id": "seminole-surf-and-turf",
+        "name": "Seminole Surf & Turf",
+        "description": "Garlic shrimp, grilled chicken, mozzarella, lemon oil.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 14 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 19 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 24 }
+        ],
+        "image": "/images/pizza-bbq.svg",
+        "tag": "House Signature",
+        "featured": true
+      },
+      {
+        "id": "pepperoni-heatwave",
+        "name": "Pepperoni Heatwave",
+        "description": "Cup pepperoni, jalapenos, chilli honey.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 12 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 17 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 20 }
+        ],
+        "image": "/images/pizza-pepperoni.svg",
+        "tag": "Crowd Favorite",
+        "featured": true
+      },
+      {
+        "id": "gulf-coast-seafood-pie",
+        "name": "Gulf Coast Seafood Pie",
+        "description": "White sauce, flaky fish, calamari, garlic butter.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 14 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 19 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 24 }
+        ],
+        "image": "/images/pizza-bbq.svg",
+        "tag": "Seafood"
+      },
+      {
+        "id": "sunset-hawaiian",
+        "name": "Sunset Hawaiian (Yes, We Serve It)",
+        "description": "Smoked ham, roasted pineapple, extra cheese.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 12 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 17 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 20 }
+        ],
+        "image": "/images/pizza-pepperoni.svg",
+        "tag": "Yes, We Serve It"
+      },
+      {
+        "id": "garlic-mushroom-beach-pie",
+        "name": "Garlic Mushroom Beach Pie (Veg)",
+        "description": "Creamy garlic, mushrooms, parmesan.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 12 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 17 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 20 }
+        ],
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Vegetarian"
+      },
+      {
+        "id": "corn-and-cheese-vacation-pie",
+        "name": "Corn & Cheese Vacation Pie (Veg)",
+        "description": "Sweet corn, cream cheese, chilli flakes.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 12 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 17 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 20 }
+        ],
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Vegetarian"
+      }
+    ]
+  },
+  {
+    "id": "light-and-plant-based",
+    "boardId": "main-board",
+    "title": "Light & Plant-Based",
+    "description": "Beach food without the food-coma",
+    "heroCopy": "This smaller category keeps the menu balanced and makes the vegetarian and vegan story easy to find without losing the bold storefront rhythm.",
+    "coverImage": "/images/salad-bowl.svg",
+    "pricingNote": "Small, Medium, Large hand-stretched pies",
+    "items": [
+      {
+        "id": "west-coast-vegan-pie",
+        "name": "West Coast Vegan Pie",
+        "description": "Cashew cream, roasted veggies, olives.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 12 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 17 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 20 }
+        ],
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Vegan"
+      },
+      {
+        "id": "sunshine-margherita",
+        "name": "Sunshine Margherita",
+        "description": "Tomato, basil, olive oil.",
+        "variants": [
+          { "id": "small", "label": "Small", "description": "12 inch", "price": 10 },
+          { "id": "medium", "label": "Medium", "description": "14 inch", "price": 15 },
+          { "id": "large", "label": "Large", "description": "16 inch", "price": 18 }
+        ],
+        "image": "/images/pizza-veggie.svg",
+        "tag": "Classic"
+      }
+    ]
+  },
+  {
+    "id": "pasta",
+    "boardId": "main-board",
+    "title": "Pasta",
+    "description": "Comfort by the Coast",
+    "heroCopy": "Pasta gives the main board a comfort-food lane and broadens the menu beyond pizza without losing speed of choice.",
+    "coverImage": "/images/pasta-bowl.svg",
+    "items": [
+      {
+        "id": "creamy-alfredo",
+        "name": "Creamy Alfredo",
+        "description": "Pasta in creamy garlic sauce.",
+        "price": 12,
+        "image": "/images/pasta-bowl.svg",
+        "tag": "Comfort",
+        "note": "Add chicken or shrimp - Ask in store."
+      },
+      {
+        "id": "baked-ziti",
+        "name": "Baked Ziti",
+        "description": "Tomato sauce, mozzarella, parmesan.",
+        "price": 10,
+        "image": "/images/pasta-bowl.svg",
+        "tag": "Baked"
+      },
+      {
+        "id": "penne-arrabbiata",
+        "name": "Penne Arrabbiata",
+        "description": "Spicy tomato sauce, garlic, basil.",
+        "price": 10,
+        "image": "/images/pasta-bowl.svg",
+        "tag": "Spicy"
+      },
+      {
+        "id": "shrimp-scampi-pasta",
+        "name": "Shrimp Scampi Pasta",
+        "description": "Garlic butter, white wine, lemon.",
+        "price": 12,
+        "image": "/images/pasta-bowl.svg",
+        "tag": "Seafood"
+      }
+    ]
+  },
+  {
+    "id": "signature-wings",
+    "boardId": "main-board",
+    "title": "Signature Wing Flavours",
+    "description": "Sauced & Tossed Fresh to Order",
+    "heroCopy": "Wings deserve their own family-share section, especially when the flavor lineup is a fast upsell next to pizza and pasta.",
+    "coverImage": "/images/side-wings.svg",
+    "pricingNote": "Half Dozen $8.99, Dozen $14.99",
+    "items": [
+      {
+        "id": "classic-buffalo-wings",
+        "name": "Classic Buffalo Spicy",
+        "description": "Tangy Frank's Red Hot butter sauce - the original American wing.",
+        "variants": [
+          { "id": "half-dozen", "label": "Half Dozen", "price": 8.99 },
+          { "id": "dozen", "label": "Dozen", "price": 14.99 }
+        ],
+        "image": "/images/side-wings.svg",
+        "tag": "Original"
+      },
+      {
+        "id": "smoky-bbq-wings",
+        "name": "Smoky BBQ Fan Fave",
+        "description": "Molasses-sweet BBQ glaze with a slow-smoked hickory finish.",
+        "variants": [
+          { "id": "half-dozen", "label": "Half Dozen", "price": 8.99 },
+          { "id": "dozen", "label": "Dozen", "price": 14.99 }
+        ],
+        "image": "/images/side-wings.svg",
+        "tag": "Fan Fave"
+      },
+      {
+        "id": "garlic-parmesan-wings",
+        "name": "Garlic Parmesan",
+        "description": "Butter-roasted garlic, shaved parmesan & fresh parsley - Italian soul.",
+        "variants": [
+          { "id": "half-dozen", "label": "Half Dozen", "price": 8.99 },
+          { "id": "dozen", "label": "Dozen", "price": 14.99 }
+        ],
+        "image": "/images/side-wings.svg",
+        "tag": "Italian Soul",
+        "featured": true
+      }
+    ]
+  }
+]

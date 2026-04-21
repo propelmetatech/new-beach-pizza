@@ -57,7 +57,7 @@ export default function HomeCategoryExplorer({ categories }) {
       <section className="page-shell pt-6">
         <div className="surface-card overflow-hidden border border-brand-secondary/10">
           <div key={activeCategory.id} className="grid gap-0 xl:grid-cols-[0.95fr,1.05fr]">
-            <div className="relative overflow-hidden p-6 sm:p-8 lg:p-10">
+            <div className="relative order-2 overflow-hidden p-5 sm:p-8 lg:order-1 lg:p-10">
               <div className="absolute -left-12 top-0 h-40 w-40 rounded-full bg-brand-accent/25 blur-3xl animate-float-soft" />
               <div className="absolute bottom-0 right-0 h-52 w-52 rounded-full bg-brand-secondary/12 blur-3xl" />
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.92),transparent_42%)]" />
@@ -66,26 +66,26 @@ export default function HomeCategoryExplorer({ categories }) {
                 <p className="text-xs font-extrabold uppercase tracking-[0.28em] text-brand-secondary">
                   SEMINOLE favourites
                 </p>
-                <h1 className="brand-title mt-4 font-heading text-4xl uppercase leading-[0.92] sm:text-5xl md:text-6xl">
+                <h1 className="brand-title mt-3 font-heading text-3xl uppercase leading-[0.95] sm:mt-4 sm:text-5xl md:text-6xl">
                   {activeCategory.title}
                 </h1>
-                <p className="mt-5 max-w-xl text-base leading-8 text-black/72 sm:text-lg">
+                <p className="mt-4 max-w-xl text-sm leading-7 text-black/72 sm:mt-5 sm:text-lg sm:leading-8">
                   {activeCategory.description || "Freshly prepared menu favorites in this section."}
                 </p>
 
-                <div className="mt-6 flex flex-wrap gap-3">
+                <div className="mt-5 flex flex-wrap gap-3 sm:mt-6">
                   <span className="rounded-full bg-brand-secondary px-4 py-2 text-xs font-extrabold uppercase tracking-[0.16em] text-white shadow-lg shadow-brand-secondary/20">
                     {activeCategory.items.length} items
                   </span>
                   {activeCategory.pricingNote ? (
-                    <span className="rounded-full bg-brand-accent px-4 py-2 text-xs font-extrabold uppercase tracking-[0.16em] text-brand-black shadow-lg shadow-brand-accent/20">
+                    <span className="hidden rounded-full bg-brand-accent px-4 py-2 text-xs font-extrabold uppercase tracking-[0.16em] text-brand-black shadow-lg shadow-brand-accent/20 sm:inline-flex">
                       {activeCategory.pricingNote}
                     </span>
                   ) : null}
                 </div>
 
                 {highlightedItems.length ? (
-                  <div className="mt-8 grid gap-3 sm:grid-cols-3">
+                  <div className="mt-8 hidden gap-3 sm:grid sm:grid-cols-3">
                     {highlightedItems.map((item, index) => (
                       <div
                         key={item.id}
@@ -105,7 +105,7 @@ export default function HomeCategoryExplorer({ categories }) {
               </div>
             </div>
 
-            <div className="photo-spotlight relative min-h-[360px] bg-brand-black">
+            <div className="photo-spotlight relative order-1 min-h-[320px] bg-brand-black lg:order-2 lg:min-h-[360px]">
               <Image
                 src={activeCategory.coverImage}
                 alt={activeCategory.title}
@@ -114,7 +114,7 @@ export default function HomeCategoryExplorer({ categories }) {
                 sizes="(min-width: 1280px) 640px, 100vw"
                 className="object-cover animate-pan-slow"
               />
-              <div className="absolute left-5 top-5 z-10 max-w-[240px] rounded-[24px] border border-white/15 bg-black/30 p-4 text-white backdrop-blur-md animate-float-soft">
+              <div className="absolute left-5 top-5 z-10 hidden max-w-[240px] rounded-[24px] border border-white/15 bg-black/30 p-4 text-white backdrop-blur-md animate-float-soft sm:block">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-white/70">
                   {activeCategory.boardName || "Menu Board"}
                 </p>
@@ -122,7 +122,7 @@ export default function HomeCategoryExplorer({ categories }) {
                   {activeCategory.items[0]?.name || activeCategory.title}
                 </p>
               </div>
-              <div className="absolute bottom-5 right-5 z-10 max-w-[280px] rounded-[26px] border border-white/15 bg-white/10 p-4 text-white backdrop-blur-md animate-fade-up">
+              <div className="absolute bottom-5 right-5 z-10 hidden max-w-[280px] rounded-[26px] border border-white/15 bg-white/10 p-4 text-white backdrop-blur-md animate-fade-up sm:block">
                 <p className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-brand-accent">
                   Chef Notes
                 </p>

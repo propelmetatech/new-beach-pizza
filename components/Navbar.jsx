@@ -74,7 +74,7 @@ export default function Navbar() {
               href={toastOrderHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden rounded-full bg-brand-primary px-4 py-2.5 text-xs font-extrabold uppercase tracking-[0.14em] text-white shadow-lg shadow-brand-primary/20 transition hover:scale-105 hover:bg-brand-primaryDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent min-[390px]:inline-flex"
+              className="inline-flex whitespace-nowrap rounded-full bg-brand-primary px-3 py-2 text-[11px] font-extrabold uppercase tracking-[0.14em] text-white shadow-lg shadow-brand-primary/20 transition hover:scale-105 hover:bg-brand-primaryDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent sm:px-4 sm:py-2.5 sm:text-xs"
             >
               Order
             </a>

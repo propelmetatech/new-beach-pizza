@@ -28,7 +28,7 @@ module.exports = {
         float: "0 18px 40px rgba(30, 36, 40, 0.14)"
       },
       fontFamily: {
-        heading: ["var(--font-body)"],
+        heading: ["var(--font-heading)"],
         body: ["var(--font-body)"]
       }
     }

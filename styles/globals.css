@@ -4,6 +4,7 @@
 
 :root {
   color-scheme: light;
+  --brand-logo-red: #d7372f;
 }
 
 html {
@@ -12,9 +13,10 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top left, rgba(0, 119, 182, 0.1), transparent 26%),
-    radial-gradient(circle at bottom right, rgba(249, 200, 70, 0.16), transparent 28%),
-    linear-gradient(180deg, #fffdf7 0%, #fff9ee 48%, #fff4dd 100%);
+    radial-gradient(circle at 12% 0%, rgba(215, 55, 47, 0.12), transparent 22%),
+    radial-gradient(circle at 100% 18%, rgba(0, 119, 182, 0.12), transparent 24%),
+    radial-gradient(circle at 50% 100%, rgba(249, 200, 70, 0.18), transparent 28%),
+    linear-gradient(180deg, #fffdfa 0%, #fff8ed 52%, #fff3de 100%);
 }
 
 @layer base {
@@ -37,22 +39,29 @@ body {
   }
 
   .surface-card {
-    @apply rounded-[30px] border border-brand-primary/10 bg-white shadow-soft backdrop-blur-sm;
+    @apply rounded-[30px] border border-brand-primary/10 bg-white/90 shadow-soft backdrop-blur-sm;
+  }
+
+  .brand-title {
+    color: var(--brand-logo-red);
+    text-shadow: 0 12px 24px rgba(198, 40, 45, 0.12);
   }
 
   .pill-link {
-    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black transition hover:-translate-y-0.5 hover:border-brand-primary hover:bg-brand-primary/10 hover:text-brand-primary;
+    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black transition hover:-translate-y-0.5 hover:border-brand-secondary hover:bg-brand-secondary hover:text-white;
   }
 
   .menu-chip {
-    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black shadow-sm transition hover:-translate-y-0.5 hover:border-brand-primary hover:bg-brand-primary/10 hover:text-brand-primary;
+    @apply inline-flex items-center rounded-full border border-brand-primary/15 bg-white px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-brand-black shadow-sm transition hover:-translate-y-0.5 hover:border-brand-secondary hover:bg-brand-secondary hover:text-white;
   }
 
   .hero-shell {
     background:
       radial-gradient(circle at top right, rgba(249, 200, 70, 0.24), transparent 24%),
       radial-gradient(circle at 18% 18%, rgba(255, 255, 255, 0.16), transparent 18%),
-      linear-gradient(145deg, #1e2428 0%, #00699f 36%, #c6282d 72%, #f9c846 100%);
+      linear-gradient(145deg, #1e2428 0%, #00699f 34%, #c6282d 72%, #f9c846 100%);
+    background-size: 140% 140%;
+    animation: heroDrift 18s ease-in-out infinite;
   }
 
   .hero-dots {
@@ -62,6 +71,25 @@ body {
 
   .glass-panel {
     @apply border border-white/15 bg-white/10 shadow-float backdrop-blur-md;
+  }
+
+  .feature-badge {
+    @apply inline-flex items-center rounded-full border border-brand-secondary/10 bg-white px-3 py-1 text-[11px] font-extrabold uppercase tracking-[0.18em] text-brand-secondary shadow-lg;
+    box-shadow: 0 12px 24px rgba(30, 36, 40, 0.08);
+  }
+
+  .photo-spotlight {
+    @apply relative overflow-hidden;
+  }
+
+  .photo-spotlight::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(14, 18, 20, 0.05) 0%, rgba(14, 18, 20, 0.42) 100%),
+      radial-gradient(circle at top left, rgba(255, 255, 255, 0.22), transparent 32%);
+    pointer-events: none;
   }
 
   .category-rail-shell {
@@ -94,8 +122,80 @@ body {
   }
 }
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -10px, 0);
+  }
+}
+
+@keyframes panSlow {
+  0% {
+    transform: scale(1.08) translate3d(-2%, -1%, 0);
+  }
+
+  100% {
+    transform: scale(1.18) translate3d(2%, 2%, 0);
+  }
+}
+
+@keyframes heroDrift {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .animate-fade-up {
+    animation: fadeUp 0.75s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+
+  .animate-float-soft {
+    animation: floatSoft 6s ease-in-out infinite;
+  }
+
+  .animate-pan-slow {
+    animation: panSlow 16s ease-in-out infinite alternate;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .hero-shell,
+  .animate-fade-up,
+  .animate-float-soft,
+  .animate-pan-slow {
+    animation: none !important;
   }
 }

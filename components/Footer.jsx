@@ -1,6 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 
+const gmbHref =
+  "https://www.google.com/search?q=New+Beach+Pizza+5411+Seminole+Blvd+Seminole%2C+FL+33772&oq=New+Beach+Pizza+5411+Seminole+Blvd+Seminole%2C+FL+33772&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBNIBCDExMDhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8";
+
 export default function Footer() {
   return (
     <footer className="mt-16 border-t border-black/10 bg-brand-black text-white">
@@ -27,11 +30,18 @@ export default function Footer() {
           </p>
           <div className="mt-5 space-y-3 text-sm font-semibold leading-6 text-white/80">
             <p>
-              New Beach Pizza
-              <br />
-              5411 Seminole Blvd
-              <br />
-              Seminole, FL 33772
+              <a
+                className="inline-block transition hover:text-brand-accent"
+                href={gmbHref}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                New Beach Pizza
+                <br />
+                5411 Seminole Blvd
+                <br />
+                Seminole, FL 33772
+              </a>
             </p>
             <p>
               <a className="transition hover:text-brand-accent" href="tel:+17278002888">
@@ -50,10 +60,16 @@ export default function Footer() {
         </div>
 
         <nav className="flex flex-wrap gap-3 md:justify-end" aria-label="Footer navigation">
-          <Link href="/" className="pill-link !border-white/15 !bg-white/10 !text-white">
+          <Link
+            href="/"
+            className="pill-link !border-white/15 !bg-white/10 !text-white normal-case !tracking-normal"
+          >
             Home
           </Link>
-          <Link href="/contact" className="pill-link !border-white/15 !bg-white/10 !text-white">
+          <Link
+            href="/contact"
+            className="pill-link !border-white/15 !bg-white/10 !text-white normal-case !tracking-normal"
+          >
             Contact
           </Link>
         </nav>

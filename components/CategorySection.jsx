@@ -18,9 +18,10 @@ export default function CategorySection({
               {eyebrow}
             </p>
           ) : null}
-          <h2 className="mt-3 font-heading text-4xl uppercase leading-none text-brand-black sm:text-5xl">
+          <h2 className="brand-title mt-3 font-heading text-4xl uppercase leading-none sm:text-5xl">
             {title}
           </h2>
+          <div className="mt-4 h-1.5 w-24 rounded-full bg-brand-primary" />
           {description ? (
             <p className="mt-4 max-w-2xl text-base leading-7 text-black/65">{description}</p>
           ) : null}

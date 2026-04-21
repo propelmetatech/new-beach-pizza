@@ -1,8 +1,11 @@
+const gmbHref =
+  "https://www.google.com/search?q=New+Beach+Pizza+5411+Seminole+Blvd+Seminole%2C+FL+33772&oq=New+Beach+Pizza+5411+Seminole+Blvd+Seminole%2C+FL+33772&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIKCAEQABiABBiiBDIKCAIQABiABBiiBDIKCAMQABiABBiiBNIBCDExMDhqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8";
+
 const socialLinks = [
   {
     label: "Instagram",
     href: "https://www.instagram.com/new_beach_pizza?igsh=dmlpejZweXdlOGI1",
-    className: "bg-brand-secondary",
+    className: "bg-brand-secondary text-white",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
         <path
@@ -15,7 +18,7 @@ const socialLinks = [
   {
     label: "Facebook",
     href: "https://www.facebook.com/share/1GbotgQqyt/",
-    className: "bg-brand-primary",
+    className: "bg-brand-primary text-white",
     icon: (
       <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
         <path
@@ -28,14 +31,27 @@ const socialLinks = [
   {
     label: "Threads",
     href: "https://www.threads.com/@new_beach_pizza",
-    className: "bg-brand-green",
+    className: "bg-brand-green text-white",
     icon: <span className="text-[23px] font-semibold leading-none">@</span>
   },
   {
     label: "X",
     href: "https://x.com/new_beach_pizza",
-    className: "bg-brand-black",
+    className: "bg-brand-black text-white",
     icon: <span className="text-base font-bold leading-none">X</span>
+  },
+  {
+    label: "Google Business",
+    href: gmbHref,
+    className: "border border-brand-primary/20 bg-white text-brand-primary",
+    icon: (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5">
+        <path
+          fill="currentColor"
+          d="M12 2.5a6.9 6.9 0 0 0-6.9 6.9c0 4.98 6.16 11.35 6.42 11.62a.68.68 0 0 0 .96 0c.26-.27 6.42-6.64 6.42-11.62A6.9 6.9 0 0 0 12 2.5Zm0 9.56a2.66 2.66 0 1 1 0-5.32 2.66 2.66 0 0 1 0 5.32Z"
+        />
+      </svg>
+    )
   }
 ];
 
@@ -54,7 +70,7 @@ export default function SocialRail() {
             rel="noopener noreferrer"
             aria-label={link.label}
             title={link.label}
-            className={`group relative grid h-10 w-10 place-items-center rounded-full text-white shadow-md shadow-black/15 transition hover:-translate-x-1 hover:scale-105 hover:ring-2 hover:ring-brand-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent sm:h-12 sm:w-12 ${link.className}`}
+            className={`group relative grid h-10 w-10 place-items-center rounded-full shadow-md shadow-black/15 transition hover:-translate-x-1 hover:scale-105 hover:ring-2 hover:ring-brand-accent/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent sm:h-12 sm:w-12 ${link.className}`}
           >
             {link.icon}
             <span className="pointer-events-none absolute right-[calc(100%+12px)] top-1/2 hidden -translate-y-1/2 whitespace-nowrap rounded-full bg-brand-black px-3 py-1.5 text-xs font-bold text-white opacity-0 shadow-lg transition group-hover:block group-hover:opacity-100 group-focus-visible:block group-focus-visible:opacity-100">

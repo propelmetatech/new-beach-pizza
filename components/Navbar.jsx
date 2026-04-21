@@ -105,14 +105,6 @@ export default function Navbar() {
                   {link.label}
                 </Link>
               ))}
-              <a
-                href={toastOrderHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center rounded-full bg-brand-primary px-5 py-3 text-sm font-extrabold uppercase tracking-[0.16em] text-white shadow-lg shadow-brand-primary/20 transition hover:scale-[1.02] hover:bg-brand-primaryDark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-brand-accent sm:w-fit"
-              >
-                Order Now
-              </a>
             </div>
           </div>
         ) : null}
